@@ -17,14 +17,6 @@
 - 飞书开放平台文档：`https://open.feishu.cn/document/introduction`
 - 目标云文档链接：`https://pcnuh3xna4el.feishu.cn/base/N8Jbb75ztaUKeQsaYPrcKNvLnJe?table=tblqtpPJewNBuI04&view=vewLdLkJ90`
 
-## 固定配置
-
-后续接入时，云文档相关配置建议固定如下：
-
-- Base App Token：`N8Jbb75ztaUKeQsaYPrcKNvLnJe`
-- Table ID：`tblqtpPJewNBuI04`
-- View ID：`vewLdLkJ90`
-
 说明：
 - 上述值来自你提供的飞书 Base 链接
 - 后续代码中可以将这些值写入后端配置文件或常量中，作为固定数据源
@@ -72,10 +64,10 @@ flybook/
 
 当前数据库配置：
 
-- 数据库：`lyubishchev`
+- 数据库：
 - 地址：`localhost:3306`
 - 用户名：`root`
-- 密码：`1123`
+- 密码：
 
 ### 前端
 
@@ -139,9 +131,9 @@ http://localhost:5173
 ```properties
 feishu.app-id=你的AppId
 feishu.app-secret=你的AppSecret
-feishu.base.app-token=N8Jbb75ztaUKeQsaYPrcKNvLnJe
-feishu.base.table-id=tblqtpPJewNBuI04
-feishu.base.view-id=vewLdLkJ90
+feishu.base.app-token=
+feishu.base.table-id=
+feishu.base.view-id=
 ```
 
 ### 前端职责
@@ -207,9 +199,9 @@ feishu.base.view-id=vewLdLkJ90
 ```bash
 FEISHU_APP_ID=your_app_id
 FEISHU_APP_SECRET=your_app_secret
-FEISHU_BASE_APP_TOKEN=N8Jbb75ztaUKeQsaYPrcKNvLnJe
-FEISHU_TABLE_ID=tblqtpPJewNBuI04
-FEISHU_VIEW_ID=vewLdLkJ90
+FEISHU_BASE_APP_TOKEN=
+FEISHU_TABLE_ID=
+FEISHU_VIEW_ID=
 ```
 
 ## 备注
