@@ -1,0 +1,7 @@
+{
+  "extends": "@antfu",
+  "rules": {
+    "eqeqeq": "off",
+    "vue/eqeqeq": "off"
+  }
+}

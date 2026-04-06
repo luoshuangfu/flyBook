@@ -1,0 +1,63 @@
+{
+  "productName": "shion-dev",
+  "version": "../package.json",
+  "identifier": "hanaTsuk1.shion.dev",
+  "build": {
+    "beforeBuildCommand": "pnpm build",
+    "beforeDevCommand": "pnpm dev",
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420"
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": "v1Compatible",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installerIcon": "icons/icon.ico",
+        "languages": [
+          "English",
+          "SimpChinese"
+        ]
+      }
+    },
+    "publisher": "hanaTsuk1",
+    "copyright": "Copyright © 2024 shion-app",
+    "targets": [
+      "nsis",
+      "app"
+    ],
+    "licenseFile": "../LICENSE",
+    "resources": {
+      "../src-autostart/target/release/autostart.exe": "bin/autostart.exe"
+    }
+  },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://github.com/shion-app/shion/releases/latest/download/latest.json"
+      ],
+      "active": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDlENDgzNDQ5OEFFNjUwNApSV1FFWmE2WVJJUFVDVWExSS9UZ3hKUkRJYk9mS2pKcXJwMTBTKzVIeFRRaDJ6Vm9QRjlGRCtHRQo="
+    }
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "security": {
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$APPDATA/**"
+        ]
+      },
+      "csp": null
+    },
+    "windows": []
+  }
+}

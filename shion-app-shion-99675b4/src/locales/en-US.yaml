@@ -1,0 +1,542 @@
+nav:
+  overview: Overview
+  timeline: Timeline
+  timeblock: Timeblock
+  plan: Plan
+  timer: Timer
+  label: Label
+  monitor: Monitor
+  activity: Activity
+  config: Config
+  about: About
+  moment: Moment
+  box: Box
+  history: History
+  dimension: Dimension
+  collection: Collection
+  record: Record
+  list: List
+  account: Account
+config:
+  locale: Language
+  checkUpdate: Check update
+  autostart: Auto start
+  runAsAdmin: Run as admin
+  launchVisible: Visible at startup
+  serverRunning: Running
+  serverPort: Port
+  timelineMinMinute: Minimum time
+  timelineGroupGapMinute: Grouping Intervals
+  timeblockMinMinute: Minimum time
+  themeColor: Theme color
+  colorMode: Theme Mode
+  watcherWhitelist: Monitor whitelist
+  faviconService: Favicon service
+  scheduledExport: Scheduled export
+  scheduledExportPath: Path
+  scheduledExportPeriod: Period
+  desc:
+    timelineMinMinute: When displaying the timeline, filter out segments smaller than the current minute
+    timelineGroupGapMinute: When displaying the timeline, separate segments of the same type that are separated by the current minute
+    watcherWhitelist: Programs that are in the following folders and have not been added will be added when running
+    faviconService: Select service providers in the timeline for website icon requests
+    timeblockMinMinute: When displaying the timeblock, filter out segments smaller than the current minute
+    scheduledExportPath: Click to select the save path
+    runAsAdmin: Start the computer as an admin to increase the permissions of the automatic monitoring
+    restartService: After changing the port, click to restart the service
+    checkUpdate: Automatically pop up an update pop-up window
+  tooltip:
+    runAsAdmin: Not recommended to enable (unstable operation)
+  tab:
+    general: General
+    behavior: Behavior
+    appearance: Appearance
+    export: Export
+    service: Service
+  header:
+    timeline: Timeline
+    timeblock: Timeblock
+    monitor: Monitor
+  export:
+    period:
+      day: Day
+      week: Week
+      month: Month
+  service:
+    restart: Restart service
+  appearance:
+    colorMode:
+      light: Light
+      dark: Dark
+      auto: Auto
+plan:
+  create: Create plan
+  update: Update plan
+  name: Name
+  color: Color
+  button:
+    show: Convert to visible
+    hide: Convert to hidden
+label:
+  create: Create Label
+  update: Update Label
+  name: Name
+  plan: Plan Name
+  color: Color
+  button:
+    start: Start timing
+    show: Convert to visible
+    hide: Convert to hidden
+box:
+  create: Create box
+  update: Update box
+  name: Name
+  color: Color
+  count: '{count} items'
+dimension:
+  create: Create dimension
+  update: Update dimension
+  mark: Mark
+  name: Name
+  color: Color
+  code: Code (Optional)
+  form:
+    code:
+      game: Game
+      video: Video
+      music: Music
+      browser: Browser
+error:
+  unique: '{field} already exists'
+  unhandle: Unhandled exception({error})
+message:
+  success: Operate successfully
+note:
+  fill:
+    title: Fill in information
+    plan: Plan name
+    label: Label name
+    countdown: Countdown
+    time: Time
+    start: Start
+    end: End
+    direct: Direct input
+modal:
+  submit: Submit
+  cancel: Cancel
+  prompt: Prompt
+  confirmDelete: Are you sure to delete?
+  reset: Reset
+button:
+  update: Update
+  remove: Remove
+  add: Add
+time:
+  hour: hour
+  minute: min
+calendar:
+  year: year
+  month: month
+  switch: Switch to {mode}
+  tooltip:
+    visit: '{visit} visits'
+    count: '{count} notes'
+tray:
+  quit: Quit
+updater:
+  title: Update
+  content: The new version {version} has been released. Are you sure to update it?
+  checkUpdate: An error occurred while pulling the latest version
+  updating: An error occurred while updating
+  reinstall: After uninstallation, download the latest version from the official website
+  latest: You have the latest version
+timer:
+  countdown: The countdown has reached the target time
+  timing: Timing
+overview:
+  week: Last week
+  month: Last month
+  plan: Plan
+  label: Label
+  create: Create widget
+  update: Update widget
+monitor:
+  filterProgram: Filter Program to monitor
+  tip: The following list shows the running programs. The program running as an administrator needs to be rerun as an administrator in order to function properly for it to obtain and listen
+  isAdmin: 'Is isAdmin: '
+program:
+  update: Update program
+  name: Name
+  color: Color
+  path: Path
+activity:
+  idle: Idle
+  detail: Open log
+  line: Line chart
+  bar: Bar chart
+about:
+  website: Official website
+  github: Github
+  steam: Steam
+  checkUpdate: Check for updates
+  copy: Copied to clipboard
+  appInfo: copy app info
+moment:
+  create: Record the moment
+  export: Export all data
+  inputTitle: Input title...
+  submit: Submit
+  edit: Edit
+  placeholder: '[Image]'
+  boxLabel: Save to
+  createdAt: 'Created at: {date}'
+  link:
+    submit: Link
+    remove: Remove link
+    snackbar: Currently in candidate state, select the object that needs to be linked
+    submitTip: The selected {count} item will be linked to the target. Are you sure?
+    cancelTip: The link is about to be cancelled. Are you sure?
+  deprecated: The moment will be redone, please export all data in the more menu at the bottom left
+  box:
+    all: All
+  tip:
+    required: Required
+    duplicateTitle: This title already exists
+    notSave: The content has not been saved. Are you sure to exit?
+  editor:
+    uodo: Uodo
+    redo: Redo
+    bold: Bold
+    italic: Italic
+    underline: Underline
+    strikethrough: Strikethrough
+    code: Code
+    codeBlock: Code block
+    link: Link
+    taskList: Task list
+    listBulleted: Bullet list
+    listNumbered: Numbered List
+    quote: Quote
+    image: Image
+    video: Video
+notiwind:
+  success: Success
+  info: Info
+  warning: Warning
+  error: Error
+database:
+  RAW: 'Unhandled database error: ({message})'
+  SQLITE_CONSTRAINT_UNIQUE: Duplicate value already exists
+hint:
+  empty: No data
+  overview: Collect data, create charts
+  plan: Make a plan, classify it into categories
+  timeline: Nothing happened at this moment
+  box: Store daily moments here
+  history: A variety of browser records
+  moment: Every thought and memory
+  monitor: Click, browse, and then record
+  label: Under the plan, subdivide types
+  dimension: Now everything is connected
+titleBar:
+  view:
+    desc: View
+    setting: Setting
+    sync: Sync
+    history: Browser history
+    importExport: Import and export
+    extension: Extension
+    report: Report
+  help:
+    desc: Help
+    about: About
+    tour: Tutorial
+    log: Open log dir
+    devtools: Open developer tools
+    changelog: Changelog
+    problem: General problem
+  announcement:
+    desc: Announcement
+    message: Message
+    xiaohongshu: Xiao hong shu
+timeline:
+  plan: Plan
+  label: Label
+  monitor: Monitor
+  history: History
+  moment: Moment
+  dimension: Dimension
+  filter: Filter Categories
+  reset: Reset Filter condition
+timelineGraph:
+  include: '{count} items, spent {totalTime}'
+  includeCount: '{count} items'
+  update:
+    title: Update Note
+    start: Start
+    end: End
+  note:
+    compress: Need to expand the group first
+    tooltip: Click to open the menu
+  history:
+    tooltip: Click to open the webpage
+  remark:
+    compress: Need to expand the group first
+    tooltip: Click to open the software
+    wait: Now opening the software
+  moment:
+    tooltip: Click to open the software
+upload:
+  webImage: Unsupported image types filtered
+  webVideo: Unsupported video types filtered
+  invalidType: Type {name} not supported
+widget:
+  type: Type
+  typeDesc:
+    ACTIVE_STATUS_CALENDAR: Active status calendar
+    SINGLE_CATEGORY_BAR: Single category bar
+    TEXT_SUMMARY: Text Summary
+    DAILY_ACTIVIRY: Daily activity
+    RECENT_ACTIVIRY_PIE: Recent activity pie
+    SINGLE_CATEGORY_HEATMAP: Single category heatmap
+  subtitle:
+    ACTIVE_STATUS_CALENDAR: Summary of Daily Records Over the Past Year
+    SINGLE_CATEGORY_BAR: Daily single category bar in recent days
+    TEXT_SUMMARY: Average duration of a single category
+    DAILY_ACTIVIRY: Hourly records for 24 hours
+    RECENT_ACTIVIRY_PIE: The proportion of various activities in recent days
+    SINGLE_CATEGORY_HEATMAP: Daily single category heatmap in recent days
+  column: Occupy column
+  row: Occupy row
+  singleCategoryBar:
+    table: Data category
+    plan: Plan
+    label: Label
+    program: Program
+    dimension: Dimension
+    vertical: Vertical arrangement
+  textSummary:
+    clockIn: Clock in
+    day: '{day} days'
+    average: Average
+    monthAverage: 30 days average
+  recentActivityPie:
+    title: Summary of the past 7 days
+statusBar:
+  timer: Timing...
+  drag:
+    text: Drag
+    tooltip:
+      lock: Lock
+      unlock: Unlock
+  refresh:
+    text: Refresh
+    tooltip: Refresh page
+  calendar:
+    year: Year
+    month: Month
+    switch:
+      year: Switch to year
+      month: Switch to month
+  timeline:
+    node:
+      text: Data Group
+      tooltip:
+        compress: Compress
+        decompress: Decompress
+    search:
+      text: Search
+      tooltip: Search and navigate
+    filter:
+      tooltip: Filter Categories
+    history:
+      text: Pulling record
+      tooltip: Browser history
+    historyVisible:
+      text: Browser history
+      tooltip:
+        show: Show
+        hide: Hide
+  moment:
+    search:
+      text: Search
+      tooltip: Search
+  update:
+    text: New version released
+    tooltip: Click to update
+  help:
+    text: Help
+    tooltip:
+      manual: Manual recording
+      automatic: Automatic recording
+      dimension: Dimension organization
+      chart: Chart display
+      timeline: Timeline display
+      timeblock: Timeblock display
+  listMode:
+    text: List mode
+    tooltip:
+      show: Show
+      hide: Hide
+gridCard:
+  move: Move
+sync:
+  authorizationStatus: Authorization status
+  authorize: Authorize
+  authorized: Authorization Complete
+  sync: Start sync
+  pulling: Pulling...
+  pushing: Pushing...
+  updating: Updating...
+  mergeConflict: Merge conflicts need to be manually resolved
+tiptap:
+  placeholder: Write something...
+  link:
+    edit: Edit link
+    remove: Remove link
+    enter: Enter link
+    set: Set link
+  image:
+    left: Align left
+    center: Align center
+    right: Align right
+tour:
+  doneBtnText: Done
+  nextBtnText: Next
+  prevBtnText: Previous
+  step1:
+    title: Start
+    description: Thank you for using shion, let me introduce it quickly. If you have any questions, please check the help in the top bar and status bar.🎉
+  step1-1:
+    title: Tips
+    description: The software is still in the development stage, you need to know before using it ⚠️
+  step2:
+    title: Navigation bar
+    description: This is the navigation bar, no need to say more 🧭
+  step3:
+    title: Look carefully
+    description: The operation buttons of each page are hidden here 👀
+  step14:
+    title: Status bar
+    description: The shortcut operations and status of the current page are all here 👆
+  step15:
+    title: Top bar
+    description: The software settings and a lot of configurations are here, don't miss them ⚙️
+  step16:
+    title: End
+    description: Start using it now🥳
+history:
+  import:
+    button: Import data
+    confirm: The historical data of {browsers} will be imported soon. Are you sure?
+    success: Successfully imported
+    error: An error occurred during import
+    running: Importing data
+    calculating: Calculating...
+    empty: No imported data
+  tip: The imported browser will automatically synchronize data
+  cancel:
+    button: Cancel sync
+search:
+  tab:
+    history: History
+    moment: Moment
+    remark: Remark
+  tip:
+    input: Enter keywords and click to search
+    empty: No matching content
+    done: No more content
+filePicker:
+  name: Executable program
+importExport:
+  tip: The imported data will directly overwrite the existing data, remember to only use it during migration ⚠️
+  import: Import
+  export: Export
+  relaunch: Preparing to relaunch soon...
+  verify:
+    noMigration: There is an issue with importing data. Please re export the old data on the migrated machine
+    version: The data version does not match. The source data is {source}, and the current version is {version}
+changelog:
+  title: Changelog
+  empty: Changelog not retrieved
+  checkbox: After upgrading, no longer automatically display logs
+  tab:
+    current: Current
+    all: All
+watcherWhitelist:
+  add: Add
+  remove: Remove
+  duplicate: Cannot add repeatedly
+refresh:
+  error: Error occurred during refresh
+timeblock:
+  today: Today
+extension:
+  tab:
+    dandanplay: Dandanplay
+    obsidian: Obsidian
+  dandanplay:
+    port: Port
+    path: Path
+  obsidian:
+    workspace: Vault
+    created: created
+    updated: updated
+  desc:
+    dandanplay: Click to select the exe file
+    obsidian:
+      workspace: Add the folder to which the vault belongs
+      created: Extract creation time from frontmatter
+      updated: Extract update time from frontmatter
+  tip:
+    obsidian:
+      duplicate: Cannot add repeatedly
+      invalid: This folder is not a obsidian vault
+dimensionMark:
+  tab:
+    label: Label
+    monitor: Monitor
+help:
+  chart:
+    step1: Create a chart and freely adjust the type, position and size. If you don't have data yet, go to **Data Collection**
+    step2: For a general introduction to charts, go to [link](https://shion.app/guide/display#chart)
+  timeline:
+    step1: The timeline records all the data that occurred in a day in detail. Use the calendar on the right to jump to other dates at any time, or you can **click icon** to operate on the data
+    step2: There are many operations in the bottom bar under the timeline, you can **filter**, **expand**, **search** and other functions
+    step3: For a general introduction to the timeline, go to [link](https://shion.app/guide/display#timeline)
+  timeblock:
+    step1: The time block roughly displays the recent data
+    step2: For a general introduction to the time block, please go to [link](https://shion.app/guide/display#timeblock)
+  manual:
+    step1: You need to create a **plan** first, then create a **label** under the plan, and then you can start **recording**
+    step2: For example, you create a **reading** plan, and a **specific book** is the label, and the record is **an activity**
+    step3: For a general introduction to manual recording, please go to [link](https://shion.app/guide/record#manual)
+  automatic:
+    step1: By adding the specified software, let shion monitor its activities, and its **mouse**, **keyboard**, **audio** activities will be monitored
+    step2: If you think manual addition is too troublesome, click `View`-`Settings`-`Monitor whitelist` to add
+    step3: If you encounter trouble, you can go to [link](https://shion.app/guide/record#automatic)
+  dimension:
+    step1: Through the dimension, you can freely classify the **manual recording** and **automatic recording** data and mark them
+    step2: For example, create a **game** dimension to install several automatic recording software
+report:
+  select:
+    title: Range
+    week: Week
+    month: Month
+    year: Year
+    custom: Custom range
+  range:
+    title: Custom
+  generate: Generate report
+  tip: When there are too many data categories, only a limited number are shown in the chart
+reportChart:
+  save: Save
+  summary: shion summary report
+  title:
+    program: Program
+    plan: Plan
+    label: Label
+    domain: Browser
+    overview: Overview
+    visit: '{visit} visits'
+  tagline: Capturing moments in life🍂

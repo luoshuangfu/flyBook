@@ -1,0 +1,46 @@
+﻿server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: myblog-backend
+  datasource:
+    url: ${DB_URL:jdbc:h2:mem:myblog;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE}
+    username: ${DB_USERNAME:sa}
+    password: ${DB_PASSWORD:}
+    driver-class-name: ${DB_DRIVER:org.h2.Driver}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:6379}
+  h2:
+    console:
+      enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+myblog:
+  jwt:
+    secret: ${JWT_SECRET:replace_with_very_long_random_secret_please_change_now_1234567890}
+    expire-seconds: ${JWT_EXPIRE_SECONDS:86400}
+  feishu:
+    enabled: ${FEISHU_ENABLED:false}
+    app-id: ${FEISHU_APP_ID:}
+    app-secret: ${FEISHU_APP_SECRET:}
+    document-id: ${FEISHU_DOCUMENT_ID:}
+
+logging:
+  level:
+    org.springframework.security: INFO

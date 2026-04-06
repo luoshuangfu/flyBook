@@ -1,0 +1,35 @@
+﻿:root {
+  --bg-main: #f7edd8;
+  --bg-panel: #fff8ea;
+  --ink: #35271f;
+  --accent: #e69144;
+  --accent-soft: #ffd29b;
+  --line: #684b37;
+  --ok: #7ea172;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 15% 20%, #ffe8c7 0%, transparent 32%),
+    radial-gradient(circle at 90% 10%, #ffe1b8 0%, transparent 28%),
+    var(--bg-main);
+  font-family: "LXGW WenKai", "ZCOOL KuaiLe", "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hand-drawn-card {
+  background: var(--bg-panel);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 4px 4px 0 #8a684f;
+}

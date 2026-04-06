@@ -1,0 +1,542 @@
+nav:
+  overview: 总览
+  timeline: 时间线
+  timeblock: 时间块
+  plan: 计划
+  timer: 计时
+  label: 标签
+  monitor: 监听
+  activity: 活动
+  config: 设置
+  about: 关于
+  moment: 瞬间
+  box: 匣子
+  history: 历史记录
+  dimension: 维度
+  collection: 数据集合
+  record: 记录
+  list: 列表
+  account: 我的
+config:
+  locale: 语言
+  checkUpdate: 检查更新
+  autostart: 开机启动
+  runAsAdmin: 管理员身份启动
+  launchVisible: 启动时显示界面
+  serverRunning: 运行中
+  serverPort: 端口号
+  timelineMinMinute: 最小时间
+  timelineGroupGapMinute: 分组间隔
+  timeblockMinMinute: 最小时间
+  themeColor: 主题色
+  colorMode: 主题模式
+  watcherWhitelist: 自动监听白名单
+  faviconService: 图标获取
+  scheduledExport: 定时导出数据
+  scheduledExportPath: 路径
+  scheduledExportPeriod: 周期
+  desc:
+    timelineMinMinute: 时间线显示时，筛选掉小于当前分钟的片段
+    timelineGroupGapMinute: 时间线显示时，分离同类型相隔当前分钟的片段
+    watcherWhitelist: 在下列文件夹中且未添加的程序，运行时自动加入监听
+    faviconService: 选择时间线中进行网站图标请求的服务提供者
+    timeblockMinMinute: 时间块显示时，筛选掉小于当前分钟的片段
+    scheduledExportPath: 点击选择保存路径
+    runAsAdmin: 以管理员身份开机启动，提高自动监听获取窗口的权限
+    restartService: 更改端口号后，点击重启服务
+    checkUpdate: 主动弹出更新弹窗
+  tooltip:
+    runAsAdmin: 不推荐开启（运行不稳定）
+  tab:
+    general: 通用
+    behavior: 行为
+    appearance: 外观
+    export: 导出
+    service: 第三方服务
+  header:
+    timeline: 时间线
+    timeblock: 时间块
+    monitor: 自动监听
+  export:
+    period:
+      day: 日
+      week: 周
+      month: 月
+  service:
+    restart: 重启服务
+  appearance:
+    colorMode:
+      light: 浅色
+      dark: 深色
+      auto: 自动
+plan:
+  create: 创建计划
+  update: 修改计划
+  name: 名称
+  color: 颜色
+  button:
+    show: 转为显示
+    hide: 转为隐藏
+label:
+  create: 创建标签
+  update: 修改标签
+  name: 名称
+  plan: 计划名称
+  color: 颜色
+  button:
+    start: 开始计时
+    show: 转为显示
+    hide: 转为隐藏
+box:
+  create: 创建匣子
+  update: 修改匣子
+  name: 名称
+  color: 颜色
+  count: '{count} 项'
+dimension:
+  create: 创建维度
+  update: 修改维度
+  mark: 标记
+  name: 名称
+  color: 颜色
+  code: 编码 (可选)
+  form:
+    code:
+      game: 游戏
+      video: 视频
+      music: 音乐
+      browser: 浏览器
+error:
+  unique: '{field}已存在'
+  unhandle: '未处理异常({error})'
+message:
+  success: 操作成功
+note:
+  fill:
+    title: 填写信息
+    plan: 计划名称
+    label: 标签名称
+    countdown: 倒计时
+    time: 时间
+    start: 开始
+    end: 结束
+    direct: 直接录入
+modal:
+  submit: 确定
+  cancel: 取消
+  prompt: 提示
+  confirmDelete: 确定删除吗?
+  reset: 重置
+button:
+  update: 更改
+  remove: 删除
+  add: 新增
+time:
+  hour: 小时
+  minute: 分钟
+calendar:
+  year: 年
+  month: 月
+  switch: 切换到{mode}
+  tooltip:
+    visit: '{visit}次'
+    count: '{count}篇'
+tray:
+  quit: 退出
+updater:
+  title: 更新
+  content: 新版本{version}已发布，确定更新吗?
+  checkUpdate: 拉取最新版本时出现错误
+  updating: 更新过程中出现错误
+  reinstall: 需卸载后，在官网下载最新版本
+  latest: 已经是最新版本
+timer:
+  countdown: 倒计时已达到目标时间
+  timing: 计时中
+overview:
+  week: 最近一周
+  month: 最近一个月
+  plan: 计划
+  label: 标签
+  create: 创建展示组件
+  update: 更新展示组件
+monitor:
+  filterProgram: 筛选要监听的程序
+  tip: 以下列表为正在运行的程序。以管理员身份运行的程序，其获取和监听，需要以管理员身份重新运行shion才能正常工作
+  isAdmin: '是否为管理员: '
+program:
+  update: 更新程序
+  name: 名称
+  color: 颜色
+  path: 路径
+activity:
+  idle: 空闲
+  detail: 展开日志
+  line: 折线图
+  bar: 柱状图
+about:
+  website: 官网
+  github: Github
+  steam: Steam
+  checkUpdate: 检查更新
+  copy: 已复制到剪贴板
+  appInfo: 复制应用信息
+moment:
+  create: 记录下瞬间
+  export: 导出所有数据
+  inputTitle: 输入标题...
+  submit: 提交
+  edit: 编辑
+  placeholder: '[图片]'
+  boxLabel: 保存至
+  createdAt: '创建于: {date}'
+  link:
+    submit: 链接
+    remove: 移除链接
+    snackbar: 正处于链接候选状态, 选中需要链接的对象
+    submitTip: 所选中{count}项将与目标链接在一起, 是否确认?
+    cancelTip: 即将取消链接, 是否确认?
+  deprecated: 瞬间功能将重做，所有数据请在左下方更多菜单中导出
+  box:
+    all: 全部
+  tip:
+    required: 需要输入
+    duplicateTitle: 已存在此标题
+    notSave: 内容未保存，确定退出吗?
+  editor:
+    uodo: 撤销
+    redo: 重做
+    bold: 加粗
+    italic: 斜体
+    underline: 下划线
+    strikethrough: 删除线
+    code: 代码
+    codeBlock: 代码块
+    link: 链接
+    taskList: 任务列表
+    listBulleted: 列表
+    listNumbered: 有序列表
+    quote: 引用
+    image: 图片
+    video: 视频
+notiwind:
+  success: 成功
+  info: 提示
+  warning: 警告
+  error: 错误
+database:
+  RAW: '未处理数据库错误: ({message})'
+  SQLITE_CONSTRAINT_UNIQUE: 已存在重复值
+hint:
+  empty: 暂无数据
+  overview: 收集数据, 创建图表
+  plan: 制定计划, 分门别类
+  timeline: 此刻无事发生
+  box: 日常发生的瞬间, 存放在此处
+  history: 五花八门的浏览器记录
+  moment: 每一份思考与记忆
+  monitor: 点击、浏览, 然后记录
+  label: 在计划之下, 细分类型
+  dimension: 现在联通一切
+titleBar:
+  view:
+    desc: 视图
+    setting: 设置
+    sync: 同步
+    history: 浏览器历史记录
+    importExport: 导入与导出
+    extension: 扩展
+    report: 报表
+  help:
+    desc: 帮助
+    about: 关于
+    tour: 使用教程
+    log: 打开日志文件夹
+    devtools: 打开开发者工具
+    changelog: 更新日志
+    problem: 常见问题
+  announcement:
+    desc: 公告
+    message: 通知
+    xiaohongshu: 小红书
+timeline:
+  plan: 计划
+  label: 标签
+  monitor: 监听
+  history: 历史记录
+  moment: 瞬间
+  dimension: 维度
+  filter: 筛选类别
+  reset: 重置筛选条件
+timelineGraph:
+  include: '包含{count}项，耗时{totalTime}'
+  includeCount: '包含{count}项'
+  update:
+    title: 修改记录
+    start: 开始
+    end: 结束
+  note:
+    compress: 需要先展开分组
+    tooltip: 点击打开菜单
+  history:
+    tooltip: 点击打开网页
+  remark:
+    compress: 需要先展开分组
+    tooltip: 点击打开软件
+    wait: 正在打开软件
+  moment:
+    tooltip: 点击打开笔记
+upload:
+  webImage: 已过滤不支持的图片类型
+  webVideo: 已过滤不支持的视频类型
+  invalidType: 不支持{name}类型
+widget:
+  type: 类型
+  typeDesc:
+    ACTIVE_STATUS_CALENDAR: 活跃状态日历
+    SINGLE_CATEGORY_BAR: 单独类别柱状图
+    TEXT_SUMMARY: 文本总结
+    DAILY_ACTIVIRY: 每日活跃
+    RECENT_ACTIVIRY_PIE: 最近活跃饼状图
+    SINGLE_CATEGORY_HEATMAP: 单独类别热力图
+  subtitle:
+    ACTIVE_STATUS_CALENDAR: 近一年每日记录总结
+    SINGLE_CATEGORY_BAR: 最近每日单项记录柱状图
+    TEXT_SUMMARY: 单项类别平均时长
+    DAILY_ACTIVIRY: 24小时内每小时记录
+    RECENT_ACTIVIRY_PIE: 最近几天各项活动占比
+    SINGLE_CATEGORY_HEATMAP: 最近每日单项记录热力图
+  column: 占用列数
+  row: 占用行数
+  singleCategoryBar:
+    table: 数据类别
+    plan: 计划
+    label: 标签
+    program: 程序
+    dimension: 维度
+    vertical: 垂直排列
+  textSummary:
+    clockIn: 打卡时长
+    day: '{day} 天'
+    average: 平均时长
+    monthAverage: 30天平均
+  recentActivityPie:
+    title: 近7天总结
+statusBar:
+  timer: 计时中...
+  drag:
+    text: 拖拽
+    tooltip:
+      lock: 锁定
+      unlock: 解锁
+  refresh:
+    text: 刷新
+    tooltip: 刷新页面
+  calendar:
+    year: 年
+    month: 月
+    switch:
+      year: 切换到年
+      month: 切换到月
+  timeline:
+    node:
+      text: 数据分组
+      tooltip:
+        compress: 合并
+        decompress: 展开
+    search:
+      text: 搜索
+      tooltip: 搜索并跳转
+    filter:
+      tooltip: 筛选类别
+    history:
+      text: 拉取记录
+      tooltip: 浏览器历史
+    historyVisible:
+      text: 浏览器历史
+      tooltip:
+        show: 显示
+        hide: 隐藏
+  moment:
+    search:
+      text: 搜索
+      tooltip: 搜索
+  update:
+    text: 新版本已发布
+    tooltip: 点击更新
+  help:
+    text: 帮助
+    tooltip:
+      manual: 手动记录
+      automatic: 自动记录
+      dimension: 维度组织
+      chart: 图表展示
+      timeline: 时间线展示
+      timeblock: 时间块展示
+  listMode:
+    text: 列表模式
+    tooltip:
+      show: 显示
+      hide: 隐藏
+gridCard:
+  move: 移动
+sync:
+  authorizationStatus: 授权状态
+  authorize: 授权
+  authorized: 授权完成
+  sync: 开始同步
+  pulling: 拉取中...
+  pushing: 推送中...
+  updating: 更新中...
+  mergeConflict: 合并发生冲突，需手动解决
+tiptap:
+  placeholder: 写些什么...
+  link:
+    edit: 编辑链接
+    remove: 删除链接
+    enter: 输入链接
+    set: 设置链接
+  image:
+    left: 左对齐
+    center: 居中
+    right: 右对齐
+tour:
+  doneBtnText: 结束
+  nextBtnText: 下一步
+  prevBtnText: 上一步
+  step1:
+    title: 开始
+    description: 感谢使用shion, 接下来快速介绍一下。如果碰到疑问, 请查看顶部栏和状态栏的帮助🎉
+  step1-1:
+    title: 提示
+    description: 软件当前仍处于开发阶段, 使用前你需要知道⚠️
+  step2:
+    title: 导航栏
+    description: 这里是导航栏, 无需多言🧭
+  step3:
+    title: 仔细看清
+    description: 每个页面的操作按钮，都藏在了这里👀
+  step14:
+    title: 状态栏
+    description: 当前页面的快捷操作、状态都在这里👆
+  step15:
+    title: 顶栏
+    description: 软件的设置，还有一大堆配置都在这，不要漏掉了⚙️
+  step16:
+    title: 结束
+    description: 现在开始使用吧🥳
+history:
+  import:
+    button: 导入数据
+    confirm: 即将导入{browsers}的历史数据, 是否确认?
+    success: 导入成功
+    error: 导入出错
+    running: 导入数据中
+    calculating: 计算中...
+    empty: 无导入数据
+  tip: 导入过的浏览器将会自动同步数据
+  cancel:
+    button: 取消同步
+search:
+  tab:
+    history: 浏览器历史
+    moment: 瞬间
+    remark: 备注
+  tip:
+    input: 输入关键字, 点击搜索
+    empty: 没有匹配内容
+    done: 无更多内容
+filePicker:
+  name: 应用程序
+importExport:
+  tip: 导入的数据会直接覆盖现有数据, 记住仅在迁移时使用⚠️
+  import: 导入
+  export: 导出
+  relaunch: 即将重新启动...
+  verify:
+    noMigration: 导入数据存在问题, 请重新在迁移的机器上导出旧数据
+    version: 数据版本不符合, 源数据为{source}, 当前版本为{version}
+changelog:
+  title: 更新日志
+  empty: 未拉取到更新日志
+  checkbox: 升级后不再自动显示日志
+  tab:
+    current: 当前
+    all: 所有
+watcherWhitelist:
+  add: 新增
+  remove: 删除
+  duplicate: 不能重复添加
+refresh:
+  error: 刷新时发生错误
+timeblock:
+  today: 今天
+extension:
+  tab:
+    dandanplay: 弹弹play
+    obsidian: Obsidian
+  dandanplay:
+    port: 端口号
+    path: 路径
+  obsidian:
+    workspace: 仓库
+    created: 创建时间
+    updated: 更新时间
+  desc:
+    dandanplay: 点击选择exe文件
+    obsidian:
+      workspace: 添加仓库所属的文件夹
+      created: 从文档属性中提取创建时间
+      updated: 从文档属性中提取更新时间
+  tip:
+    obsidian:
+      duplicate: 不能重复添加
+      invalid: 该文件夹不是obsidian仓库
+dimensionMark:
+  tab:
+    label: 标签
+    monitor: 监听
+help:
+  chart:
+    step1: 创建图表，自由调整种类、位置及大小。还没有数据的话，前往**数据集合**吧
+    step2: 图表的大致介绍可以前往[链接](https://shion.app/zh/guide/display#chart)
+  timeline:
+    step1: 时间线细致地记录了一天发生的所有数据，配合右侧的日历随时跳转到其他日期，也可以**点击图标**对数据进行操作
+    step2: 时间线下的底部栏有着许多操作，你可以进行**筛选**、**展开**、**搜索**等等功能
+    step3: 时间线的大致介绍可以前往[链接](https://shion.app/zh/guide/display#timeline)
+  timeblock:
+    step1: 时间块大致展示最近的数据
+    step2: 时间块的大致介绍，可以前往[链接](https://shion.app/zh/guide/display#timeblock)
+  manual:
+    step1: 你需要先创建一个**计划**，然后在计划之下创建一个**标签**，随后便可以开始进行**记录**
+    step2: 举个例子，你创建了一个**读书**的计划，而一本**具体的书**便是标签，记录则是**一次活动**
+    step3: 手动记录的大致介绍可以前往[链接](https://shion.app/zh/guide/record#manual)
+  automatic:
+    step1: 通过添加指定软件，让shion进行监听其活动，其**鼠标**、**键盘**、**音频**活动都会被监听
+    step2: 如果觉得手动添加过于麻烦，点击`视图`-`设置`-`自动监听白名单`进行添加
+    step3: 如果你遇到了麻烦，可以前往[链接](https://shion.app/zh/guide/record#automatic)
+  dimension:
+    step1: 通过维度，你可以将**手动记录**和**自动记录**的数据自由归类，为其打上标记
+    step2: 比如创建一个**游戏**的维度来装下几个自动记录的软件
+report:
+  select:
+    title: 范围
+    week: 本周
+    month: 本月
+    year: 今年
+    custom: 自由选择
+  range:
+    title: 自定义
+  generate: 生成报表
+  tip: 当数据类别过多时，图表中只展示有限个数
+reportChart:
+  save: 保存
+  summary: shion总结报表
+  title:
+    program: 监听
+    plan: 计划
+    label: 标签
+    domain: 浏览器访问
+    overview: 总览
+    visit: '{visit}次'
+  tagline: 定格生活中的瞬间🍂
